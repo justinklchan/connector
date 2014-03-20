@@ -1,0 +1,28 @@
+
+<form action="/register" method="POST">
+	Username (6-20 characters inclusive): <br/>
+	<input type="text" name="username" value="<%= @username%>"> <br/>
+	Password (6-20 characters inclusive): <br/>
+	<input type="password" name="password"> <br/>
+	Confirm password: <br/>
+	<input type="password" name="confirm_password"> <br/>
+	Email: <br/>
+	<input type="text" name="email" value="<%= @email%>"> <br/>
+
+	
+	<script type="text/javascript"
+     src="http://www.google.com/recaptcha/api/challenge?k=6Ldn9O0SAAAAAP9TuYo_q_njA3Gp2t3__XDgd2G_">
+	</script>
+	<noscript>
+	<iframe src="http://www.google.com/recaptcha/api/noscript?k=your_public_key"
+	 height="300" width="500" frameborder="0"></iframe><br>
+	<textarea name="recaptcha_challenge_field" rows="3" cols="40">
+	</textarea>
+	<input type="hidden" name="recaptcha_response_field"
+	 value="manual_challenge">
+	</noscript>
+	
+
+	<input type="submit" value="Submit">
+
+</form>

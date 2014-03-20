@@ -1,0 +1,24 @@
+
+<%= session[:error]%>
+<% qIndex = 0 %>
+<% @questions.each do |question|%>
+<form action="/answers" method="POST">
+	<input type="hidden" name="qID" value=<%= question[0]%>><br/>
+	<input type="hidden" name="qIndex" value=<%= qIndex%>><br/>
+	<%= question[1]%>
+	<%if question[2]%><br/>
+		<% index = 0%>
+		<% question[3].each do |option| %>
+			<% if question[4].to_i == index%>
+				<input type="radio" name=<%= "radio#{question[0]}"%> checked value=<%=index %>><%= option%><br/>
+			<% else %>
+				<input type="radio" name=<%="radio#{question[0]}"%> value=<%=index %>><%= option%><br/>
+			<% end %>
+			<% index += 1%>
+		<% end %>
+		<input type="submit" value="Submit">
+	<% end %>
+	<br/>
+</form>
+<%qIndex+=1%>
+<% end %>

@@ -1,0 +1,8 @@
+<form action="/login" method="POST">
+	Username: <br/>
+	<input type="text" name="username" value="<%= session[:username]%>"> <br/>
+	Password: <br/>
+	<input type="password" name="password"> <br/>
+	<a href="/forgot">Forgot my password</a>
+	<input type="submit" value="Submit">
+</form>

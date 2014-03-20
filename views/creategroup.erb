@@ -1,0 +1,36 @@
+<script src="application.js"></script>
+<h2>Create a list of people to match</h2>
+<form action="/creategroup" method="post" onsubmit="placeInHidden('.',sel2,hide);">
+<input type="hidden" name="hide" />
+<table border="0">
+    <tr>
+        <td>
+            <select name="sel1" size="10" multiple="multiple">
+                <% @users.each do |user| %>
+            <option><%= "#{user.first_name} #{user.last_name} (#{user.email})"%></option>
+            <% end %>
+            </select>
+        </td>
+        <td align="center" valign="middle">
+            <input type="button" value="--&gt;"
+             onclick="moveOptions(this.form.sel1, this.form.sel2);" /><br />
+            <input type="button" value="&lt;--"
+             onclick="moveOptions(this.form.sel2, this.form.sel1);" />
+        </td>
+        <td>
+            <select name="sel2" size="10" multiple="multiple">
+            </select>
+        </td>
+    </tr>
+</table>
+    <input type="submit" value="Create list">
+</form>
+
+<script>
+function placeInHidden(delim, selfObj, hideObj)
+{
+  for (var i=0; i<selfObj.options.length; i++) {
+    hideObj.value += selfObj.options[i].value+","
+  }
+}
+</script>

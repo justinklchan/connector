@@ -1,0 +1,37 @@
+<h1><%= "#{@userObj.username}"%></h1>
+<form action="/edit" method="POST">
+	First name: <br/>
+	<input type="text" name="first_name" value="<%= @userObj.first_name%>"> <br/>
+	Last name: <br/>
+	<input type="text" name="last_name" value="<%= @userObj.last_name%>"> <br/>
+	Email: <br/>
+	<input type="text" name="email" value="<%= @userObj.email%>"> <br/>
+
+	Class year: <br/>
+	<select name="class_year">
+		<% for i in @start..@end%>
+	  		<option <%= "selected" if i == @userObj.class_year %>><%= i %></option>
+	  	<% end %>
+	</select>
+	<br/>
+	Major: <br/>
+<select name="major">
+<% @majors.each do |major| %>
+<option <%= "selected" if major == @userObj.major %>><%= major %></option>
+<% end %>
+</select>
+	Other:
+	<input type="text" name="major_other"> <br/>
+
+	<br/>
+	Greek Affiliation: <br/>
+<select name="affiliation">
+<% @greeks.each do |greek| %>
+<option <%= "selected" if greek == @userObj.affiliation %>><%= greek %></option>
+<% end %>
+</select>
+	Other:
+	<input type="text" name="affiliation_other"> <br/>
+
+	<input type="submit" value="Submit">
+</form>

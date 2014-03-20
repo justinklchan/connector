@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf8">
+	<title><%= @title%>||DartmouthConnector</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- <link href="/custom.css" rel="stylesheet"> -->
+<!-- 	<link href="/reset.css" rel="stylesheet">
+	<link href="/style.css" rel="stylesheet"> -->
+	
+</head>
+<body>
+	<h1>DartmouthConnector</h1>
+	<nav>
+		<ul>
+			<% if not session.has_key?(:user) %>
+				<li><a href="/register">Register</a></li>
+				<li><a href="/login">Login</a></li>
+			<%else%>
+				<li><a href="/logout">Logout</a></li>
+				<li><a href="/edit">Edit</a></li>
+				<li><a href="/profile">Profile</a></li>
+				<li><a href="/random">Random</a></li>
+				<li><a href="/admin">Admin</a></li>
+				<li><a href="/clear">Clear</a></li>
+				<li><a href="/dashboard">Dashboard</a></li>
+				<li><a href="/creategroup">Create</a></li>
+				<li><a href="/lists">Lists</a></li>
+				<li><a href="/answers">Answers</a></li>
+			<% end %>
+		</ul>
+	</nav>
+	<div id="main">
+		<section>
+			<%= styled_flash %>
+		</section>
+		<%= yield %>
+	</div>
+</body>
+</html>

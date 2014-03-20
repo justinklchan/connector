@@ -1,0 +1,18 @@
+<%= @error%>
+<form action="/lists" method="POST">
+<% for list in 0...@data.length %>
+<ul>
+<form action="/lists" method="POST">
+<button type="submit" name="delete_list">Delete list</button>
+<button type="submit" name="delete_people">Delete person(s)</button>
+<button type="submit" name="pair">Pair off</button>
+<input type="text" name="n" value="2">
+<input type="hidden" name="listnum" value=<%= list%>>
+<% for d in 0...@data[list].length %>
+	<li><input type="checkbox" name=<%= d%>><%= @data[list][d] %></li> 
+<% end %>
+</form>
+<hr/>
+</ul>
+<% end %>
+</form>

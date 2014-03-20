@@ -1,0 +1,6 @@
+# Logfile created on 2014-03-02 17:44:45 -0500 by logger.rb/44203
+I, [2014-03-02T17:44:45.096219 #9367]  INFO -- : 0:  rack (1.5.2) from /usr/local/rvm/gems/ruby-2.1.0@global/specifications/rack-1.5.2.gemspec
+I, [2014-03-02T17:44:45.096629 #9367]  INFO -- : 0:  tilt (1.4.1) from /usr/local/rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-03-02T17:44:45.096907 #9367]  INFO -- : 0:  sinatra (1.1.0) from /usr/local/rvm/gems/ruby-2.1.0/specifications/sinatra-1.1.0.gemspec
+I, [2014-03-02T17:44:45.122433 #9367]  INFO -- : 0:  sinatra-flash (0.3.0) from /usr/local/rvm/gems/ruby-2.1.0/bundler/gems/sinatra-flash-9060a9c02232/sinatra-flash.gemspec
+I, [2014-03-02T17:44:45.122748 #9367]  INFO -- : 0:  bundler (1.5.1) from /usr/local/rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec

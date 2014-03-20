@@ -1,0 +1,9 @@
+Please reenter a new password, it must be between 6 and 20 characters inclusive. <br/>
+<%= "#{session[:error]}"%><br/>
+<form action=<%= "/reset/#{@id}/#{@key}"%> method="POST">
+	Password:<br/>
+	<input type="password" name="password"> <br/>
+	Confirm Password:<br/>
+	<input type="password" name="confirm_password"> <br/>
+	<input type="submit" value="Submit">
+</form>

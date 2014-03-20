@@ -1,0 +1,8 @@
+<%= "#{@user.first_name} #{@user.last_name} (#{@user.username})" %> you have been paired up with 
+<%= "#{@other.first_name} #{@other.last_name} (#{@other.username})" %> based on our secret matching algorithm
+
+<form action="/random" method="POST">
+
+	<input type="submit" value="Send email reminder">
+
+</form>

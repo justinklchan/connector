@@ -1,0 +1,48 @@
+<h2>Admin panel</h2>
+<h2>Questions</h2><br/>
+<form action="/admin" method="POST">
+
+<% if @isRadio%>
+<input type="radio" name="opt" checked value="radio">Radio<br/>
+<input type="radio" name="opt" value="checkbox">Checkbox
+<% else %>
+<input type="radio" name="opt" value="radio">Radio<br/>
+<input type="radio" name="opt" checked value="checkbox">Checkbox
+<% end %>
+
+<br/>
+<input type="hidden" name="qID" value=<%= @id%>> <br/>
+Enter question: <br/>
+<input type="text" name="question" value=<%= @question%>> <br/>
+Enter options, separated by the '|' symbol <br/>
+<input type="text" name="options" value=<%= @options%>> <br/>
+<input type="submit" value="Submit">
+</form>
+<hr/>
+<h2>Question Dump</h2>
+<form action="/admin" method="POST">
+<% @questions.each do |q| %>
+	<%= q.id %>
+	<input type="hidden" name="num" value=<%= q.id%>>
+	<%= q.question%>  <input type="submit" name="edit" value="Edit"> <input type="submit" name="delete" value="Delete"><br/>
+	<% temp = q.answers.split("|")%>
+	<% if q.isRadio%>
+		<% temp.each do |option| %>
+			<input type="radio"><%= option%><br/>
+		<% end %>
+	<% else %>
+		<% temp.each do |option| %>
+			<input type="checkbox"><%= option%><br/>
+		<% end %>
+	<% end %>
+	<br/>
+<% end %>
+</form>
+
+<hr/>
+<h2>DB Dump</h2>
+<ul>
+<% @users.each do |user| %>
+	<li><%= "#{user.id} #{user.username} #{user.email} #{user.first_name} #{user.last_name} #{user.lists} #{user.latestQuestionIndex}"%></li> 
+<% end %>
+</ul>

@@ -1,0 +1,29 @@
+Private dashboard
+<h1><%= "Welcome #{@userObj.first_name} #{@userObj.last_name}"%></h1><br/>
+<b>Username</b> <%=  "#{@userObj.username}"%><br/>
+<b>Major</b> <%=  "#{@userObj.major}"%><br/>
+<b>Class year</b> <%=  "#{@userObj.class_year}"%><br/>
+<b>Affiliation</b> <%=  "#{@userObj.affiliation}"%><br/>
+<h2>Survey questions</h2>
+<% if @q%>
+<form action="/dashboard" method="POST">
+
+<input type="hidden" name="num" value=<%= @q.id%>>
+<%= @q.question%><br/>
+<% temp = @q.answers.split("|")%>
+<% index = 0%>
+<% if @q.isRadio%>
+	<% temp.each do |option| %>
+		<input type="radio" name="radio" value=<%= index%>><%= option%><br/>
+		<% index += 1 %>
+	<% end %>
+<% else %>
+	<% temp.each do |option| %>
+		<input type="checkbox"><%= option%><br/>
+		<% index += 1 %>
+	<% end %>
+<% end %>
+	<input type="submit" value="Submit">
+	
+</form>
+<% end %>

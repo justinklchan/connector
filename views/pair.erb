@@ -1,0 +1,19 @@
+
+<form action="/pair" method="POST">
+<button type="submit" name="refresh">Refresh</button>
+</form>
+<% for group in 0...@a.length%>
+<ul>
+<form action="/pair" method="POST">
+<% @a[group].each do |person|%>
+<li><%= person%></li>
+<% end %>
+</ul>
+<input type="hidden" name="listnum" value=<%= group%>>
+<button type="submit" name="group">Email group</button>
+</form>
+<hr/>
+<% end %>
+<form action="/pair" method="POST">
+<button type="submit" name="email_all">Email all groups</button>
+</form>
