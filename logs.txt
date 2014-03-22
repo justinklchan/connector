@@ -1,0 +1,101 @@
+2014-03-21T23:22:54.635519+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:18:in `block in upgrade_model_storage'
+2014-03-21T23:22:54.635519+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:58:in `without_notices'
+2014-03-21T23:22:54.635942+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:73:in `upgrade_model_storage'
+2014-03-21T23:22:54.634913+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:98:in `block in create_model_storage'
+2014-03-21T23:22:54.636882+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-core-1.2.1/lib/dm-core/support/subject_set.rb:211:in `each'
+2014-03-21T23:22:54.636070+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-core-1.2.1/lib/dm-core/support/descendant_set.rb:64:in `block in each'
+2014-03-21T23:22:54.636882+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-core-1.2.1/lib/dm-core/support/ordered_set.rb:320:in `each'
+2014-03-21T23:22:54.635749+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:18:in `upgrade_model_storage'
+2014-03-21T23:22:54.636195+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-core-1.2.1/lib/dm-core/support/subject_set.rb:211:in `block in each'
+2014-03-21T23:22:54.635942+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:145:in `auto_upgrade!'
+2014-03-21T23:22:54.636070+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:47:in `block in repository_execute'
+2014-03-21T23:22:54.636882+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-core-1.2.1/lib/dm-core/support/ordered_set.rb:320:in `each'
+2014-03-21T23:22:54.636195+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-core-1.2.1/lib/dm-core/support/ordered_set.rb:320:in `block in each'
+2014-03-21T23:22:54.637203+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-core-1.2.1/lib/dm-core/support/descendant_set.rb:63:in `each'
+2014-03-21T23:22:54.637203+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:46:in `repository_execute'
+2014-03-21T23:22:54.637203+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.1.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:27:in `auto_upgrade!'
+2014-03-21T23:22:54.637280+00:00 app[web.1]: 	from web.rb:53:in `<main>'
+2014-03-21T23:22:56.086584+00:00 heroku[web.1]: Process exited with status 1
+2014-03-21T23:22:56.102145+00:00 heroku[web.1]: State changed from starting to crashed
+2014-03-22T02:59:25.208865+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=dartmouthconnector.herokuapp.com request_id=fd41c618-2093-498b-bf59-16c33f851427 fwd="129.170.109.55" dyno= connect= service= status=503 bytes=
+2014-03-22T02:59:25.671804+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=dartmouthconnector.herokuapp.com request_id=99b55216-b083-4fb3-af70-0f464c10a631 fwd="129.170.109.55" dyno= connect= service= status=503 bytes=
+2014-03-22T04:06:37+00:00 heroku[slug-compiler]: Slug compilation started
+2014-03-22T04:06:44.933864+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=dartmouthconnector.herokuapp.com request_id=be4d0d73-fe0e-4aac-b28b-284c491ffc8d fwd="216.66.104.6" dyno= connect= service= status=503 bytes=
+2014-03-22T04:06:45.337716+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=dartmouthconnector.herokuapp.com request_id=1daa76bc-35f1-4dc2-aab1-5d6273301871 fwd="216.66.104.6" dyno= connect= service= status=503 bytes=
+2014-03-22T04:07:05+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-03-22T04:07:05.956413+00:00 heroku[web.1]: State changed from crashed to starting
+2014-03-22T04:07:05.257025+00:00 heroku[api]: Deploy e86a42c by justintomejuan@gmail.com
+2014-03-22T04:07:05.257025+00:00 heroku[api]: Release v7 created by justintomejuan@gmail.com
+2014-03-22T04:07:08.454199+00:00 heroku[web.1]: Starting process with command `bundle exec ruby web.rb -p 44977`
+2014-03-22T04:07:11.332523+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:98:in `each'
+2014-03-22T04:07:11.332523+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:98:in `block in create_model_storage'
+2014-03-22T04:07:11.332523+00:00 app[web.1]: /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:100:in `execute_non_query': ERROR:  column "confirmed" is of type boolean but default expression is of type integer (DataObjects::SyntaxError)
+2014-03-22T04:07:11.332523+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:100:in `block (2 levels) in create_model_storage'
+2014-03-22T04:07:11.332523+00:00 app[web.1]: HINT:  You will need to rewrite or cast the expression.
+2014-03-22T04:07:11.332523+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-do-adapter-1.2.0/lib/dm-do-adapter/adapter.rb:276:in `with_connection'
+2014-03-22T04:07:11.332523+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:93:in `create_model_storage'
+2014-03-22T04:07:11.332523+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:23:in `block in create_model_storage'
+2014-03-22T04:07:11.332523+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:58:in `without_notices'
+2014-03-22T04:07:11.332523+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:23:in `create_model_storage'
+2014-03-22T04:07:11.332791+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:73:in `upgrade_model_storage'
+2014-03-22T04:07:11.332791+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:18:in `block in upgrade_model_storage'
+2014-03-22T04:07:11.332791+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/descendant_set.rb:64:in `block in each'
+2014-03-22T04:07:11.332791+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:145:in `auto_upgrade!'
+2014-03-22T04:07:11.332791+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/subject_set.rb:211:in `block in each'
+2014-03-22T04:07:11.332791+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/ordered_set.rb:320:in `block in each'
+2014-03-22T04:07:11.332791+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:57:in `upgrade_model_storage'
+2014-03-22T04:07:11.332791+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:18:in `upgrade_model_storage'
+2014-03-22T04:07:11.332791+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:47:in `block in repository_execute'
+2014-03-22T04:07:11.332985+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/ordered_set.rb:320:in `each'
+2014-03-22T04:07:11.332985+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/ordered_set.rb:320:in `each'
+2014-03-22T04:07:11.332985+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/subject_set.rb:211:in `each'
+2014-03-22T04:07:11.332985+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/descendant_set.rb:63:in `each'
+2014-03-22T04:07:11.332985+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:46:in `repository_execute'
+2014-03-22T04:07:11.332791+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:58:in `without_notices'
+2014-03-22T04:07:11.332985+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:27:in `auto_upgrade!'
+2014-03-22T04:07:11.332985+00:00 app[web.1]: 	from web.rb:53:in `<main>'
+2014-03-22T04:07:12.705347+00:00 heroku[web.1]: Process exited with status 1
+2014-03-22T04:07:12.720980+00:00 heroku[web.1]: State changed from starting to crashed
+2014-03-22T04:07:12.722417+00:00 heroku[web.1]: State changed from crashed to starting
+2014-03-22T04:07:15.025065+00:00 heroku[web.1]: Starting process with command `bundle exec ruby web.rb -p 22505`
+2014-03-22T04:07:17.400840+00:00 app[web.1]: HINT:  You will need to rewrite or cast the expression.
+2014-03-22T04:07:17.400840+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:93:in `create_model_storage'
+2014-03-22T04:07:17.400840+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:58:in `without_notices'
+2014-03-22T04:07:17.400840+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:100:in `block (2 levels) in create_model_storage'
+2014-03-22T04:07:17.400840+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-do-adapter-1.2.0/lib/dm-do-adapter/adapter.rb:276:in `with_connection'
+2014-03-22T04:07:17.400840+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:23:in `create_model_storage'
+2014-03-22T04:07:17.401089+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:57:in `upgrade_model_storage'
+2014-03-22T04:07:17.400840+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:98:in `block in create_model_storage'
+2014-03-22T04:07:17.400840+00:00 app[web.1]: /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:100:in `execute_non_query': ERROR:  column "confirmed" is of type boolean but default expression is of type integer (DataObjects::SyntaxError)
+2014-03-22T04:07:17.401089+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:145:in `auto_upgrade!'
+2014-03-22T04:07:17.401089+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:58:in `without_notices'
+2014-03-22T04:07:17.401089+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/subject_set.rb:211:in `block in each'
+2014-03-22T04:07:17.400840+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-do-adapter.rb:98:in `each'
+2014-03-22T04:07:17.401089+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/descendant_set.rb:64:in `block in each'
+2014-03-22T04:07:17.401089+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:73:in `upgrade_model_storage'
+2014-03-22T04:07:17.401089+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:18:in `upgrade_model_storage'
+2014-03-22T04:07:17.401089+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:47:in `block in repository_execute'
+2014-03-22T04:07:17.401297+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/subject_set.rb:211:in `each'
+2014-03-22T04:07:17.400840+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:23:in `block in create_model_storage'
+2014-03-22T04:07:17.401089+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/adapters/dm-postgres-adapter.rb:18:in `block in upgrade_model_storage'
+2014-03-22T04:07:17.401297+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/descendant_set.rb:63:in `each'
+2014-03-22T04:07:17.401297+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/ordered_set.rb:320:in `each'
+2014-03-22T04:07:17.401297+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:27:in `auto_upgrade!'
+2014-03-22T04:07:17.401297+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-migrations-1.2.0/lib/dm-migrations/auto_migration.rb:46:in `repository_execute'
+2014-03-22T04:07:17.401297+00:00 app[web.1]: 	from web.rb:53:in `<main>'
+2014-03-22T04:07:17.401089+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/ordered_set.rb:320:in `block in each'
+2014-03-22T04:07:17.401297+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/dm-core-1.2.1/lib/dm-core/support/ordered_set.rb:320:in `each'
+2014-03-22T04:07:18.578478+00:00 heroku[web.1]: Process exited with status 1
+2014-03-22T04:07:18.604651+00:00 heroku[web.1]: State changed from starting to crashed
+2014-03-22T04:07:20.787171+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=dartmouthconnector.herokuapp.com request_id=417a3a91-b8cb-4de9-9aea-41800f6ec847 fwd="216.66.104.6" dyno= connect= service= status=503 bytes=
+2014-03-22T04:07:21.037020+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=dartmouthconnector.herokuapp.com request_id=edfb9c6e-0687-408d-8efa-a4c355773ddd fwd="216.66.104.6" dyno= connect= service= status=503 bytes=
+2014-03-22T04:07:59.880877+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=dartmouthconnector.herokuapp.com request_id=ab9e60e8-533f-4eae-86f6-c02441998dd5 fwd="216.66.104.6" dyno= connect= service= status=503 bytes=
+2014-03-22T04:08:01.611069+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=dartmouthconnector.herokuapp.com request_id=1c18af6f-e4e5-4b8d-9f1d-7fe8b640f33a fwd="216.66.104.6" dyno= connect= service= status=503 bytes=
+2014-03-22T04:08:01.934154+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=dartmouthconnector.herokuapp.com request_id=7656c4f9-6d8a-49c8-b6c0-67e868f55259 fwd="216.66.104.6" dyno= connect= service= status=503 bytes=
+2014-03-22T04:11:46.023158+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=dartmouthconnector.herokuapp.com request_id=dd98531f-4df6-432f-8f28-c30e99f8cb67 fwd="129.170.109.55" dyno= connect= service= status=503 bytes=
+2014-03-22T04:11:46.440650+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=dartmouthconnector.herokuapp.com request_id=1e7ab17a-514d-426b-944d-6e26dd8f7698 fwd="129.170.109.55" dyno= connect= service= status=503 bytes=
+2014-03-22T04:07:59.702818+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=dartmouthconnector.herokuapp.com request_id=8f4ed6c3-879a-448b-9295-2abc1f85334c fwd="216.66.104.6" dyno= connect= service= status=503 bytes=
+2014-03-22T04:16:21.986980+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=dartmouthconnector.herokuapp.com request_id=ee1e4458-1930-4ce9-af09-25442dc429d6 fwd="129.170.109.55" dyno= connect= service= status=503 bytes=
+2014-03-22T04:16:22.156125+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=dartmouthconnector.herokuapp.com request_id=f6ba557f-4c9d-47a1-8bca-ef7484a51cb0 fwd="129.170.109.55" dyno= connect= service= status=503 bytes=
+2014-03-22T04:16:51.478555+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=dartmouthconnector.herokuapp.com request_id=832017a5-cad7-4f6e-89f9-60ecd4bde7d9 fwd="129.170.109.55" dyno= connect= service= status=503 bytes=
+2014-03-22T04:16:51.720628+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=dartmouthconnector.herokuapp.com request_id=58098a77-1afe-49d2-ac2e-e9aabab25ef7 fwd="129.170.109.55" dyno= connect= service= status=503 bytes=
